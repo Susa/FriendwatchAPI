@@ -3,8 +3,8 @@
 - Clone, install dependencies and change cache and storage folder permission
 
 ```sh
-git clone https://gitlab.com/psalmeight/watch-api.git
-cd watch-api
+git clone https://gitlab.com/psalmeight/FriendwatchAPI.git
+cd FriendwatchAPI
 
 composer install
 chmod -R 777 bootstrap/cache storage
