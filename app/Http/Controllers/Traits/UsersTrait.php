@@ -28,10 +28,10 @@ trait UsersTrait
 
       if(!empty($request->user_id)){
         
-        if($request->home_changed){
-          $obj->home_location = $request->home_location;
-          $obj->home_location_details = stripslashes(json_encode($request->home_location_details));
-        }
+        // if($request->home_changed){
+        //   $obj->home_location = $request->home_location;
+        //   $obj->home_location_details = stripslashes(json_encode($request->home_location_details));
+        // }
         
         if($request->saved_changed){
           $obj->saved_location = $request->saved_location;
@@ -41,10 +41,10 @@ trait UsersTrait
       }
       else if(empty($request->user_id)){
         $obj->saved_location = $request->saved_location;
-        $obj->home_location = $request->home_location;
+        //$obj->home_location = $request->home_location;
   
         $obj->saved_location_details = json_encode($request->saved_location_details);
-        $obj->home_location_details = json_encode($request->home_location_details);
+        //$obj->home_location_details = json_encode($request->home_location_details);
       }
 
 
