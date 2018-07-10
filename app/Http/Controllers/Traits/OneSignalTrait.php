@@ -36,7 +36,7 @@ trait OneSignalTrait
 		array_pop($emailArr); //removes the last 'operator: OR'
 
 		$fields = array(
-			'app_id' => "e2c3b80e-34fb-4910-8582-4149fa8b73a2",
+			'app_id' => "eb5fc4d8-e74b-427a-90a0-f31e9f3ca0df",
 			'tags' => $emailArr,
 			'data' => array("foo" => "bar"),
             'contents' => $content,
@@ -50,7 +50,7 @@ trait OneSignalTrait
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8',
-												   'Authorization: Basic Mzc3NTIyNjUtM2I2MS00M2YyLTlmM2ItMzcwMDI0ZTA2ZmQ2'));
+												   'Authorization: Basic YWYyZGEzNzQtZWNmYi00YmI2LThiYTctNTIyMzVkYzViMmUw'));
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 		curl_setopt($ch, CURLOPT_HEADER, FALSE);
 		curl_setopt($ch, CURLOPT_POST, TRUE);
