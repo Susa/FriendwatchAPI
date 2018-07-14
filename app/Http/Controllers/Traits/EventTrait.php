@@ -44,7 +44,7 @@ trait EventTrait
 
       if(!empty($invitedEmails)){
         $message = "You've been invited by " . $userAccount->fullname . " to watch him/her at " . $obj->title;
-        $content = $this->func_sendNotificationToUser($invitedEmails, $message, "SafeBuddy Invitation");
+        $content = $this->func_sendNotificationToUser($invitedEmails, $message, "Friendwatch Invitation");
         return $obj->id;
       }
 
@@ -63,7 +63,7 @@ trait EventTrait
     }
 
     $message = "Hello. This is to inform you that " . $user->fullname . " has arrived at " . $event->event_location . " for the " . $event->title . " event.";
-    $heading = "SafeBuddy Arrival Notification";
+    $heading = "Friendwatch Arrival Notification";
 
     return $this->sendNotificationByEmails($emails, $message, $heading);
   }
